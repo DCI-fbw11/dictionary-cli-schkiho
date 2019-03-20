@@ -19,7 +19,7 @@ client.get("hello").then(res => {
   let output = [];
 
   //console.log(client_data);
-  const provider = `Provided by ${client_data.metadata.provider}`;
+  const provider = client_data.metadata.provider;
   //console.log(provider);
   let data = client_data.results[0].lexicalEntries;
   //console.log(data);
